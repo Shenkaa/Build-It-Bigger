@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class JokeTeller {
+public final class JokeTeller {
 
     /**
      * Source: https://www.boredpanda.com/funniest-two-line-jokes/
@@ -33,6 +33,9 @@ public class JokeTeller {
             "What would The Jetsons be called if they were black? \nThe Jetsons, you fucking racist."
     );
 
+
+    private JokeTeller() {
+    }
 
     public static String getJoke() {
         return JOKE_LIST.get((int) (Math.random() * JOKE_LIST.size()));
